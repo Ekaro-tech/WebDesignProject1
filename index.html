@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" ref="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav collapsible">
+      <a href="/"><img class="nav__image" src="images/logo.jpg" alt="" /></a>
+
+      <img class="icon icon--containerss nav__toggler" src="images/menu.svg" />
+
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item" href="#"><a>Hosting</a></li>
+        <li class="nav__item" href="#"><a>VPS</a></li>
+        <li class="nav__item" href="#"><a>Domain</a></li>
+        <li class="nav__item" href="#"><a>Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="block block--dark block--skewed-left hero">
+    <div class="container grid grid--1x2">
+      <header class="block__header hero__content" data-aos="fade-right">
+        <h1 class="block__heading">Cloud Hosting for Pros</h1>
+        <p class="hero__tagline">
+          Deploy your website in less than 60 seconds
+        </p>
+        <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+      </header>
+      <picture data-aos="zoom-in-left">
+        <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
+        <img class="hero__image" src="images/banner.png" alt="" />
+      </picture>
+    </div>
+  </section>
+
+  <section class="block container block-domain">
+    <header class="block__header">
+      <h2>Starting at $9 per month</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipi sicing elit. Magni earum
+        consectetur blanditiis, illo aliqui
+      </p>
+    </header>
+    <div class="input-group">
+      <input type="text" class="input" placeholder="Enter domain name here..." />
+      <button class="btn btn--accent">
+        <img class="icon icon--primary" src="images/search.svg" />
+        Search
+      </button>
+    </div>
+    <ul class="list block-domain__price">
+      <li span class="badge badge--secondary">.com $9</li>
+      <li>.sg $10</li>
+      <li>.space $11</li>
+      <li>.info $14</li>
+      <li>.net $10</li>
+      <li>.xyz $10</li>
+    </ul>
+  </section>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    Aos.init();
+  </script>
+</body>
+
 </html>
